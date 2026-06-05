@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a1a"
+    android:padding="10dp">
+
+    <!-- Header with Timer and Device Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="#222222"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="32sp"
+            android:textColor="#00ff00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDeviceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Info"
+            android:textSize="12sp"
+            android:textColor="#ffff00"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <!-- Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="START"
+            android:textColor="#000000"
+            android:background="#00ff00"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="STOP"
+            android:textColor="#000000"
+            android:background="#ff0000" />
+    </LinearLayout>
+
+    <!-- Games Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Games"
+        android:textSize="16sp"
+        android:textColor="#00ff00"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/layoutGameButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnPUBGGlobal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PUBG GLOBAL"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnPUBGKorea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PUBG KOREA"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#ff00ff"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnPUBGTaiwan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PUBG TAIWAN"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#00ccff"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnPUBGVietnam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PUBG VIETNAM"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#ffcc00"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnBGMI"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="BGMI"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:background="#ff6600"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
